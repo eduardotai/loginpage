@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Log in </title>
+</head>
+<body>
+    <div id="contaner">
+    <div class="sidebar">
+        <div class="header">
+            <h3>Made by Tai Salles</h3>
+            <img src="odin-lined.png" alt="logo">
+        </div>
+    </div>
+
+    <div class="mainContent">
+        <section class="headerSectionContent">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare ipsum id maximus malesuada. Phasellus porttitor justo eu turpis pellentesque congue.
+            </p>
+        </section>  
+            <section class="formLog">
+             <form method="post"> 
+                    <H3>Let's do it</H3>
+                    <label for="userFirstName">First Name*</label>
+                    <input type="text" id="userFirstName" name="firstName" required></inpput>
+                    <label for="userLastName">Last Name*</label>
+                    <input type="text" id="userLastName" name="lastName" required></inpput>
+
+                    <label for="userEmail">E-mail*</label>
+                    <input type="email" required name="userEmail" id="userEmail" required> </input>
+
+                    <label for="userPhone">Phone Number with DDD</label>
+                    <input type="number" name="userPhone" id="userPhone" minlength="11" maxlength="11"> </input>
+
+                    <label for="userPassword">Password*</label>
+                    <input type="password" name="userPassword" id="userPassword" minlength="4" maxlength="16" required> </input>
+
+                <button onClick='checkType()' type="submit" id="submitButton">Create account</button>
+
+            </form>
+        </section>  
+        <section class="footerSection">
+        <footer>
+            <p>Already have an account? <a href="#">Sign in</a></p>
+        
+            <label for="userAgreement" id="userAgreementLabel">I agree with the user agreement</label>
+            <input type="checkbox" name="usreAgreement" id="userAgreement" value="userAgreement" required></input>
+            </footer>
+        </section>  
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
